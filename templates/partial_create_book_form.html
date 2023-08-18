@@ -1,0 +1,26 @@
+<form class="form-inline">
+    <div class="row">
+        <div class="col">
+            {{ form.title }}
+        </div>
+
+        <div class="col">
+            {{ form.author }}
+        </div>
+
+        <div class="col">
+            {{ form.price }}
+        </div>
+
+        <div class="col">
+            <!-- Кнопка "Add book" -->
+            <button type="submit"
+                    class="disbtn btn btn-primary"
+                    hx-post="{% url 'create_book' %}"
+                    hx-target="#book-list"
+                    hx-swap="beforeend">
+                Add book
+            </button>
+        </div>
+    </div>
+</form>
