@@ -56,7 +56,7 @@
                 hx-delete="{% url 'delete_book' book.id %}"
                 hx-target="closest tr"
                 hx-swap="outerHTML"
-                hx-confirm={% trans "Are you sure you wish to delete this book?" %}>
+                hx-confirm="{% trans 'Are you sure you wish to delete this book?' %}">
             {% trans "Delete" %}
         </button>
     </td>
